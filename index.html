@@ -9,19 +9,38 @@
     <link href="./src/styles.css" rel="stylesheet" />
     <link href="./src/styles.movil.css" rel="stylesheet" />
 
+    <!-- <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css" rel="stylesheet">  -->
+    <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 
 </head>
 
 <body>
-    <header class="header  debug">
-        <nav class=" debug primary ">
+
+
+    <header class="header">
+        <nav class="primary ">
             <div class="content-nav">
                 <a class="nav-icon"></a>
                 <div class="menu">
-                    <ul class="debug">
-                        <li class="">Inicio</li>
-                        <li class="">Productos</li>
-                        <li class="">Nosotros</li>
+                    <ul class="">
+                        <li class="item-menu">Inicio</li>
+                        <li class="item-menu">Productos
+                            <ul class="submenu debug">
+                                <li class="subitem"><a class="link" href="calculadora.html">Calculadora de Emisiones</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="item-menu">Nosotros
+
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -29,7 +48,7 @@
 
 
     </header>
-    <section class="content-header-img debug">
+    <section class="content-header-img">
 
 
         <div class="content-bienvenida">
@@ -39,55 +58,133 @@
             <p> ¡Únete a nuestra misión por un futuro más verde y sostenible!</p>
         </div>
 
-        <a class="btn unirse" href="#contacto">Contactanos</a>
+        <a class="btn_custom unirse" href="#contacto">Contactanos</a>
 
 
     </section>
 
     <main class="content-main  ">
-        <section class="content-section card-round">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique at consequuntur repellendus, minima
-            molestias ea exercitationem autem, corporis velit quia laboriosam, magni enim et sunt quod earum rem porro
-            aut.
-            Recusandae quam sunt eum ipsum, impedit consequatur quae iure similique praesentium fuga perferendis fugit
-            officiis fugiat ex. Illo officiis earum nostrum dolor natus molestias ea sapiente, quasi maiores autem
-            similique?
-            Sunt explicabo aperiam molestias expedita assumenda iste aspernatur ipsa. Culpa quisquam est suscipit vel
-            odio magni tempora consectetur quam animi. Unde eum est ad alias temporibus quo eveniet quam explicabo.
-            Accusamus a aliquam quas consectetur quis debitis eum! Repellat officia quae expedita, voluptatibus aperiam
-            quia rerum, beatae illum esse quisquam explicabo optio eum qui inventore repellendus. Hic facere libero
-            deleniti.
-            Harum recusandae, excepturi, dolor odio vero ratione quisquam dolorum sint quo placeat veritatis consectetur
-            magnam in nostrum a sit cum et consequuntur non est asperiores? Officia impedit est libero suscipit?
+
+
+
+
+        <section class="info">
+            <section class="content-info">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators ">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="" class="d-block w-100 ">
+                            <div class="card-info card-round ">
+
+                                <div class="info-header ">
+                                    <h1>¿A qué llamamos desarrollo sostenible?</h1>
+                                </div>
+                                <div class="info-content">
+                                    El desarrollo sostenible nace del concepto de sostenibilidad. La sostenibilidad hace
+                                    referencia
+                                    a la
+                                    satisfacción de las necesidades del presente sin comprometer la capacidad de futuras
+                                    generaciones...
+
+                                </div>
+                                <div class="btn_custom-leer"><a class="btn_custom leer">Leer mas.. </a></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" class="d-block w-100">
+                            <div class="card-info card-round">
+
+                                <div class="info-header">
+                                    <h1>¿A qué llamamos desarrollo sostenible?</h1>
+                                </div>
+                                <div class="info-content">
+                                    El desarrollo sostenible nace del concepto de sostenibilidad. La sostenibilidad hace
+                                    referencia
+                                    a la
+                                    satisfacción de las necesidades del presente sin comprometer la capacidad de futuras
+                                    generaciones...
+
+                                </div>
+                                <div class="btn_custom-leer"><a class="btn_custom leer">Leer mas.. </a></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" class="d-block w-100" />
+
+                            <div class="card-info card-round">
+
+                                <div class="info-header">
+                                    <h1>¿A qué llamamos desarrollo sostenible?</h1>
+                                </div>
+                                <div class="info-content">
+                                    El desarrollo sostenible nace del concepto de sostenibilidad. La sostenibilidad hace
+                                    referencia
+                                    a la
+                                    satisfacción de las necesidades del presente sin comprometer la capacidad de futuras
+                                    generaciones...
+
+                                </div>
+                                <div class="btn_custom-leer"><a class="btn_custom leer">Leer mas.. </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon primary" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon primary" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </section>
+
+
+
+            <!-- </section> -->
+
         </section>
 
 
 
-        <section class="content-section card-round">
-           
-                <form>
-                    <div class="content-form">
-                        <div class="header-form">
-                            <h1>Contactanos</h1>
-                        </div>
-                        <div class="content-input">
-                            <label  for="nombre">Nombre</label>
-                            <input id="nombre" class="form-input" placeholder="Escribe tu Nombre" type="text" name="" />
-                        </div>
-                        <div class="content-input">
-                            <label  for="correo">Correo</label>
-                            <input id="correo" class="form-input"placeholder="Escribe tu Correo" type="text" name="" />
-                        </div>
-                        <div class="content-textArea">
-                            <p >Mensaje</p>
-                            <textarea id="nombre" placeholder="Escribe un mensaje" class="form-textArea" type="text" name="" id=""></textarea>
-                        </div>
-                        <div class="content-button"><button class="succes primary">enviar</button></div>
+        <section class="content-section ">
 
+            <form>
+                <div class="content-form  card-round">
+                    <div class="header-form">
+                        <h1>Contactanos</h1>
                     </div>
-                </form>
-            
-        
+                    <div class="content-input">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" class="form-input" placeholder="Escribe tu Nombre" type="text" name="" />
+                    </div>
+                    <div class="content-input">
+                        <label for="correo">Correo</label>
+                        <input id="correo" class="form-input" placeholder="Escribe tu Correo" type="text" name="" />
+                    </div>
+                    <div class="content-textArea">
+                        <p>Mensaje</p>
+                        <textarea id="nombre" placeholder="Escribe un mensaje" class="form-textArea" type="text" name=""
+                            id=""></textarea>
+                    </div>
+                    <div class="content-button"><button class="succes primary">enviar</button></div>
+
+                </div>
+            </form>
+
+
         </section>
     </main>
 
@@ -95,10 +192,10 @@
 
         <div class="content-footer">
             <div class="logo-info"> <a class="nav-icon"></a>
-                <div class="content-footer-info">
+                <!-- <div class="content-footer-info">
                     <h2>lorem ipsum</h2>
                     <p>lorem ipsum, dolor</p>
-                </div>
+                </div> -->
             </div>
             <div class="content-menu"></div>
             <div class="social"></div>
@@ -107,6 +204,9 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="src/index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Emisiones</title>
+    <link href="./src/styles.css" rel="stylesheet" />
+    <link href="./src/styles.movil.css" rel="stylesheet" />
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css" rel="stylesheet">  -->
+    <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+
+    <header class="header">
+        <nav class="primary ">
+            <div class="content-nav">
+                <a class="nav-icon"></a>
+                <div class="menu">
+                    <ul class="">
+                        <li class="item-menu"><a class="link" href="/">Inicio</a></li>
+                        <li class="item-menu">Productos
+                            <ul class="submenu debug">
+                                <li class="subitem">Calculadora de Emisiones</li>
+                               
+                            </ul>
+                        </li>
+                        <li class="item-menu">Nosotros
+                            <!-- <ul class="submenu debug">
+                                <li class="subitem">accion</li>
+                                <li class="subitem">accion</li>
+                                <li class="subitem">accion</li>
+                            </ul> -->
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main class="content-main  ">
+
+
+        <section class="info">
+
+            <section class="card d-flex">
+
+                <div class="card m-5 card-round">
+                    <h3>Calcular emisiones de CO2 en base a energia</h3>
+                    <span id="factor_energia"></span>
+                    <label for="valor_gasolina"> Consumo Anual de Energia Electrica</label>
+
+                    <input class="form-input" id="valor_energia"  placeholder="Introduce el consumo anual de energia en Wh" type="number" /> <label for="resultado_gasolina p-5"> Resultado Emisiones Anuales</label>
+                    <input class="form-input" id="resultado_energia" />
+                    <button  class="succes primary  "id="calcular_energia"> Calcular</button>
+                </div>
+                <div class="card d-flex m-5 card-round">
+                    <h3>Calcular emisiones de CO2 en base a gasolina  </h3>
+
+                    <span id="factor_gasolina"></span>
+                    <label for="valor_gasolina"> Consumo Anual de Gasolina</label>
+                    <input class="form-input" id="valor_gasolina" placeholder="Introduce el consumo anual de gasolina en lt" type="number" />
+                    <label for="resultado_gasolina p-5"> Resultado Emisiones Anuales</label>
+
+                    <input  class="form-input"  id="resultado_gasolina mt-5"  />
+
+                    <button class="succes primary" id="calcular_gasolina">Calcular</button>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <footer id="contacto">
+
+        <div class="content-footer">
+            <div class="logo-info"> <a class="nav-icon"></a>
+                <!-- <div class="content-footer-info">
+                    <h2>lorem ipsum</h2>
+                    <p>lorem ipsum, dolor</p>
+                </div> -->
+            </div>
+            <div class="content-menu"></div>
+            <div class="social"></div>
+            <div class="terms">
+                <p>©2023 - Privacy Policy - Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/main.js" type="module"></script>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>
